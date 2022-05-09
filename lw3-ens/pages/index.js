@@ -110,7 +110,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
-        <div>
+        <div className={styles.text}>
           <h1 className={styles.title}>
             Welcome to Zee Punks {ens ? ens : address}!
           </h1>
@@ -119,9 +119,7 @@ export default function Home() {
           </div>
           {renderButton()}
         </div>
-        <div>
-          <img className={styles.image} src="./zeepunks.png" />
-        </div>
+        <img className={styles.image} src="./zeepunks.png" />
       </div>
 
       <footer className={styles.footer}>
